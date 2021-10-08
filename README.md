@@ -49,5 +49,7 @@ module.exports = {
 
 
 ### Ref
+- [webpack官网](https://www.webpackjs.com/guides/)
 - [webpack5配置babel](https://my.oschina.net/u/4125329/blog/4916583)
 - [webpack5.x 配合babel编译打包发布es5的代码](https://blog.csdn.net/maki077/article/details/110531741)
+  
