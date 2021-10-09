@@ -5,6 +5,7 @@
  const src = path.resolve(root, 'src')
  const dist = path.resolve(root, 'dist')
 
+ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
  module.exports = merge(common, {
      devtool: 'inline-source-map',
@@ -14,5 +15,8 @@
              directory: dist,
          },
      },
+     plugins: [
+         new BundleAnalyzerPlugin()
+     ]
 
  });

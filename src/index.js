@@ -1,6 +1,7 @@
 import '@/style.css';
 import { cube } from '@/math.js';
-
+//import _ from 'lodash'
+import Vue from 'vue';
 
 let test = () => {
     let nicknames = ['di', 'boo', 'punkeye'];
@@ -8,10 +9,11 @@ let test = () => {
         console.log(nickname);
     }
 }
+let aa = new Vue();
 
 function component() {
     var element = document.createElement('div');
-    element.innerHTML = 'hello world aab bb cc 5 ^3  ' + cube(5)
+    element.innerHTML = 'hello ssworld aab bb aacc 5 ^3  ' + cube(5) + _.join(['aa', 'bb'], ' ')
     element.className += 'hello'
 
     return element;
