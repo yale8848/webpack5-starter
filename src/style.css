@@ -1,3 +1,8 @@
 .hello {
+    display: flex;
     color: red;
+    width: 800px;
+    height: 100px;
+    background: url('./assets/webpack.png');
+    background-size: 100% 100%;
 }

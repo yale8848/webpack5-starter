@@ -1,7 +1,10 @@
-import '@/style.css';
+//import '@/style.css';
+import '@/style.scss'
 import { cube } from '@/math.js';
 //import _ from 'lodash'
 import Vue from 'vue';
+
+import Icon from './assets/webpack.png';
 
 let test = () => {
     let nicknames = ['di', 'boo', 'punkeye'];
@@ -14,8 +17,12 @@ let aa = new Vue();
 function component() {
     var element = document.createElement('div');
     element.innerHTML = 'hello ssworld aab bb aacc 5 ^3  ' + cube(5) + _.join(['aa', 'bb'], ' ')
-    element.className += 'hello'
+    element.className += 'hello1'
 
+    var myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
     return element;
 }
 test();

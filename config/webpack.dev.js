@@ -1,9 +1,6 @@
  const { merge } = require('webpack-merge');
  const common = require('./webpack.common.js');
- const path = require('path');
- const root = path.resolve(__dirname, '../')
- const src = path.resolve(root, 'src')
- const dist = path.resolve(root, 'dist')
+ const config = require('./config')
 
  const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -12,9 +9,10 @@
      mode: 'development',
      devServer: {
          static: {
-             directory: dist,
+             directory: config.dist,
          },
      },
+
      plugins: [
          new BundleAnalyzerPlugin()
      ]
