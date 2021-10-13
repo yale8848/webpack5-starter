@@ -46,7 +46,11 @@ module.exports = {
 
 </details>
 
+### Issue
 
+### Notice
+
+- [flex适配IE9](https://github.com/robertpanvip/flex-native) [postcss-flexibility不能正常编译](https://github.com/7rulnik/postcss-flexibility)
 
 ### Ref
 - [webpack官网](https://www.webpackjs.com/guides/)
