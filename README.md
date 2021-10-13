@@ -56,4 +56,6 @@ module.exports = {
 - [webpack官网](https://www.webpackjs.com/guides/)
 - [webpack5配置babel](https://my.oschina.net/u/4125329/blog/4916583)
 - [webpack5.x 配合babel编译打包发布es5的代码](https://blog.csdn.net/maki077/article/details/110531741)
+- [使用 Webpack5 从 0 搭建 React开发环境(详细篇)](https://jishuin.proginn.com/p/763bfbd3bb1c) `放弃了` react支持IE11+
+
   

@@ -2,10 +2,12 @@
     "devDependencies": {
         "@babel/core": "^7.15.8",
         "@babel/preset-env": "^7.15.8",
+        "@babel/preset-react": "^7.14.5",
         "autoprefixer": "^10.3.7",
         "babel-loader": "^8.2.2",
         "clean-webpack-plugin": "^4.0.0",
         "core-js": "^3.18.2",
+        "cross-env": "^7.0.3",
         "css-loader": "^6.3.0",
         "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.3.2",
@@ -14,6 +16,8 @@
         "mini-css-extract-plugin": "^2.4.2",
         "node-sass": "^6.0.1",
         "postcss-loader": "^6.1.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
         "sass-loader": "^12.1.0",
         "style-loader": "^3.3.0",
         "uglifyjs-webpack-plugin": "^2.2.0",
@@ -31,8 +35,8 @@
     "name": "webpack5-starter",
     "version": "1.0.0",
     "scripts": {
-        "dev": "set NODE_ENV=development && webpack-dev-server --open --config ./config/webpack.dev.js",
-        "build": "set NODE_ENV=production && webpack --config ./config/webpack.prod.js",
+        "dev": "cross-env NODE_ENV=development  webpack-dev-server --open --config ./config/webpack.dev.js",
+        "build": "cross-env NODE_ENV=production  webpack --config ./config/webpack.prod.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",

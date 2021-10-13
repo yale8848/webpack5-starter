@@ -96,6 +96,13 @@ module.exports = {
                 }, {
                     loader: "sass-loader" // 将 Sass 编译成 CSS
                 }]
+            },
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                }
             }
         ]
     },
